@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/429099fef3.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <figure class="header_fig">
+            <img src="images/pullrequest-logo.svg" alt="">
+        </figure>
+        <div id="btnmenu" class="menu_icono"><i class="fa-solid fa-bars"></i></div>
+    </header>
+    <div class="divmenu" id="menu">
+        <nav class="cont_menu">
+            <a href="#">Inicio</a>
+            <a href="#">Empresa</a>
+            <a href="#">Servicios</a>
+            <a href="#">Ofertas</a>
+            <a href="#">Ubicacion</a>
+            <a href="#">Contactanos</a>
+        </nav>
+    </div>
+    <section class="cont_principal">
+        <article class="cont_info">
+            <h1 class="naranja">Creacion de paginas web</h1>
+            <h2 class="curso">Curso básico de html y css</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel lacus a urna gravida malesuada. Sed facilisis, ligula vel condimentum semper, turpis sapien pulvinar velit, vel scelerisque nunc diam vel nunc</p>
+            <a id="btnmostrar" href="#">Ver</a>
+        </article>
+
+        <figure id="fotocodigo" class="info_fig">
+             <img src="images/foto_pullrequest.svg" alt="">
+        </figure>
+    </section>
+
+    <footer class="footer">
+        <p>@Cedrovich</p>
+    </footer>
+    <script>
+        $("#btnmenu").click(function() {
+            $("#menu").slideToggle();
+        });
+
+        $("#btnmostrar").click(
+            function(){
+                $("#fotocodigo").slideToggle();
+            }
+        )
+    </script>
+</body>
+</html>
